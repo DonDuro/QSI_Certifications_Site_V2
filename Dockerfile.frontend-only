@@ -1,0 +1,29 @@
+# Frontend-only Dockerfile - avoids server/rollup issues
+FROM node:20-bullseye
+
+WORKDIR /app
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y python3 make g++ git && rm -rf /var/lib/apt/lists/*
+
+# Copy package files
+COPY package*.json ./
+
+# Install dependencies
+RUN npm install -g npm@10.8.2
+RUN npm install --force
+
+# Copy source code
+COPY . .
+
+# Copy deployment config
+RUN cp vite.config.deployment.ts vite.config.ts
+
+# Change to client directory
+WORKDIR /app/client
+
+# Expose port
+EXPOSE 3000
+
+# Start only the frontend with Vite
+CMD ["npx", "vite", "--host", "0.0.0.0", "--port", "3000"]

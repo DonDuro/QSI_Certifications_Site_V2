@@ -1,0 +1,21 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3000:3000"
+      - "5000:5000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - ./client:/app/client
+      - ./server:/app/server
+      - ./shared:/app/shared
+    environment:
+      - NODE_ENV=development
+      - PORT=3000
+      - CHOKIDAR_USEPOLLING=true
+    stdin_open: true
+    tty: true
+    command: npm run dev

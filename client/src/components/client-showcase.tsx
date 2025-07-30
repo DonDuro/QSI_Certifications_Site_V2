@@ -1,21 +1,21 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { useLanguage } from "@/contexts/LanguageContext";
-import pepsicoLogo from "@assets/image_1753797805537.png";
-import medtronicLogo from "@assets/image_1753797716205.png";
-import deptStateLogo from "@assets/image_1753797765609.png";
-import pfizerLogo from "@assets/image_1753797488008.png";
-import cocaColaLogo from "@assets/image_1753797545083.png";
-import dominicanGovLogo from "@assets/image_1753797602225.png";
+// import pepsicoLogo from "@assets/image_1753797805537.png";
+// import medtronicLogo from "@assets/image_1753797716205.png";
+// import deptStateLogo from "@assets/image_1753797765609.png";
+// import pfizerLogo from "@assets/image_1753797488008.png";
+// import cocaColaLogo from "@assets/image_1753797545083.png";
+// import dominicanGovLogo from "@assets/image_1753797602225.png";
 
 
 
 const clientLogos = [
-  { name: "PepsiCo", logo: pepsicoLogo },
-  { name: "Pfizer", logo: pfizerLogo },
-  { name: "Coca-Cola", logo: cocaColaLogo },
-  { name: "Medtronic", logo: medtronicLogo },
-  { name: "US Department of State", logo: deptStateLogo },
-  { name: "Government of Dominican Republic", logo: dominicanGovLogo },
+  { name: "Client Portfolio Slide 1", logo: "/assets/clients/slide1.png" },
+  { name: "Client Portfolio Slide 2", logo: "/assets/clients/slide2.jpg" },
+  { name: "Client Portfolio Slide 3", logo: "/assets/clients/slide3.jpg" },
+  { name: "Client Portfolio Slide 4", logo: "/assets/clients/slide4.jpg" },
+  { name: "QSI Client Logos Collection", logo: "/assets/clients/qsi-logos-collection.png" },
+  { name: "Client Logos Collection", logo: "/assets/clients/logos-collection.png" },
 ];
 
 // Stats will be defined inside the component to use translations
@@ -24,10 +24,10 @@ export default function ClientShowcase() {
   const { t } = useLanguage();
   
   const stats = [
-    { number: "500+", label: t('clientsServed') },
-    { number: "30+", label: t('yearsExperience') },
-    { number: "10+", label: t('isoStandards') },
-    { number: "100%", label: t('successRate') },
+    { number: "500+", label: "Clients Served" },
+    { number: "30+", label: "Years of Experience" },
+    { number: "15+", label: "ISO Standards" },
+    { number: "100%", label: "Success Rate" },
   ];
   
   return (
@@ -38,7 +38,7 @@ export default function ClientShowcase() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-qsi-navy mb-4">{t('clientsServedSince')}</h2>
+            <h2 className="text-4xl font-bold text-qsi-navy mb-4">Over 500 clients serviced since 1993</h2>
             <p className="text-xl text-qsi-gray max-w-3xl mx-auto">
               {t('trustedByCompanies')}
             </p>
@@ -52,7 +52,10 @@ export default function ClientShowcase() {
                   <img 
                     src={client.logo} 
                     alt={client.name} 
-                    className="h-12 w-auto max-w-32 opacity-60 hover:opacity-100 transition-opacity duration-300 object-contain"
+                    className="h-20 w-auto max-w-48 opacity-80 hover:opacity-100 transition-opacity duration-300 object-contain rounded-lg shadow-sm"
+                    onError={(e) => {
+                      e.currentTarget.src = `/assets/clients/qsi-logos-collection.png`;
+                    }}
                   />
                 </div>
               ))}

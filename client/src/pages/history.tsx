@@ -2,8 +2,8 @@ import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Clock } from "lucide-react";
-import orlandoOffice from "@assets/image_1753814444316.png";
-import newarkImage from "@assets/image_1753826331550.png";
+// import orlandoOffice from "@assets/image_1753814444316.png";
+// import newarkImage from "@assets/image_1753826331550.png";
 
 export default function History() {
   const { t } = useLanguage();
@@ -25,7 +25,7 @@ export default function History() {
                   {t('historySubtitle')}
                 </p>
                 <img 
-                  src={newarkImage}
+                  src="/assets/hero/office-pic.jpg"
                   alt="Newark, New Jersey cityscape"
                   className="w-64 h-40 object-cover rounded-lg shadow-lg mx-auto"
                 />
@@ -36,7 +36,7 @@ export default function History() {
                 {/* Newark Image - Left Side */}
                 <div className="flex-shrink-0">
                   <img 
-                    src={newarkImage}
+                    src="/assets/hero/office-pic.jpg"
                     alt="Newark, New Jersey cityscape"
                     className="w-80 h-52 object-cover rounded-lg shadow-lg"
                   />
@@ -74,7 +74,7 @@ export default function History() {
               <h2 className="text-3xl font-bold text-qsi-navy mb-8 text-center">Current Headquarters - Orlando, Florida</h2>
               <div className="text-center mb-8">
                 <img 
-                  src={orlandoOffice}
+                  src="/assets/hero/executive-meeting.jpg"
                   alt="QSI Orlando Headquarters"
                   className="rounded-lg shadow-lg w-full max-w-4xl mx-auto h-80 object-cover"
                 />

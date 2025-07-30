@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Handshake, Building2, Users, TrendingUp, CheckCircle, MapPin, DollarSign, Award, ArrowRight, Globe } from "lucide-react";
 import { useLocation } from "wouter";
-import businessmanImage from "@assets/image_1753829903665.png";
+// import businessmanImage from "@assets/image_1753829903665.png";
 
 export default function BusinessOpportunity() {
   const { t } = useLanguage();
@@ -98,7 +98,7 @@ export default function BusinessOpportunity() {
               {/* Businessman Image - Left Side on Desktop, Top on Mobile */}
               <div className="flex-shrink-0 order-2 lg:order-1">
                 <img 
-                  src={businessmanImage}
+                  src="/assets/hero/executive-meeting.jpg"
                   alt="Professional businessman"
                   className="w-64 h-56 lg:w-80 lg:h-72 object-cover rounded-lg shadow-lg mx-auto"
                 />

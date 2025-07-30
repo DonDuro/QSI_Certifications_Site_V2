@@ -1,0 +1,18 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.simple
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./client:/app/client
+      - ./server:/app/server  
+      - ./shared:/app/shared
+    environment:
+      - NODE_ENV=development
+      - PORT=3000
+      - CHOKIDAR_USEPOLLING=true
+    restart: unless-stopped
+    stdin_open: true
+    tty: true

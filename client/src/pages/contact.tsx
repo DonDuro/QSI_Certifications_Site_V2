@@ -10,7 +10,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Mail, MapPin, Clock, FileText, GraduationCap, AlertTriangle, Scale, ClipboardCheck, Users } from "lucide-react";
 import { useState, useEffect } from "react";
 import { useLocation } from "wouter";
-import communicationImage from "@assets/image_1753823199413.png";
+// import communicationImage from "@assets/image_1753823199413.png";
 
 export default function Contact() {
   const { t } = useLanguage();
@@ -126,7 +126,7 @@ export default function Contact() {
               {/* Communication Image - Left Side on Desktop, Top on Mobile */}
               <div className="flex-shrink-0 order-2 lg:order-1">
                 <img 
-                  src={communicationImage}
+                  src="/assets/hero/office-pic.jpg"
                   alt="Digital communication"
                   className="w-64 h-40 lg:w-80 lg:h-52 object-cover rounded-lg shadow-lg mx-auto"
                 />

@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Shield, Calendar, Target, ExternalLink, GraduationCap, Monitor } from "lucide-react";
 import { useLocation } from "wouter";
-import securityGuardImage from "@assets/image_1753820327046.png";
+// import securityGuardImage from "@assets/image_1753820327046.png";
 
 export default function ISO18788() {
   const { t } = useLanguage();
@@ -64,7 +64,7 @@ export default function ISO18788() {
           <div 
             className="absolute inset-0 bg-cover bg-center opacity-50"
             style={{
-              backgroundImage: `url('${securityGuardImage}')`
+              backgroundImage: `url('/assets/hero/executive-meeting.jpg')`
             }}
           ></div>
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -10,13 +10,13 @@ import Footer from '@/components/footer';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Mail, User, Building, MessageSquare } from 'lucide-react';
 import { Link } from 'wouter';
-import celsoAlvaradoImage from "@assets/Celso Professional_1753838419933.jpg";
-import veronicaPolettoImage from "@assets/image_1753839044175.png";
-import jenniferWilkinsImage from "@assets/image_1753839215662.png";
-import alondraDallalImage from "@assets/image_1753839571359.png";
-import athenaRichterImage from "@assets/image_1753839789883.png";
-import danielaMaestreImage from "@assets/image_1753840263890.png";
-import yerardyMontoyaImage from "@assets/image_1753840570774.png";
+// import celsoAlvaradoImage from "@assets/Celso Professional_1753838419933.jpg";
+// import veronicaPolettoImage from "@assets/image_1753839044175.png";
+// import jenniferWilkinsImage from "@assets/image_1753839215662.png";
+// import alondraDallalImage from "@assets/image_1753839571359.png";
+// import athenaRichterImage from "@assets/image_1753839789883.png";
+// import danielaMaestreImage from "@assets/image_1753840263890.png";
+// import yerardyMontoyaImage from "@assets/image_1753840570774.png";
 
 interface TeamMember {
   id: string;
@@ -178,47 +178,33 @@ export default function KeyContacts() {
                       {/* Profile Image */}
                       <div className="flex-shrink-0 mx-auto md:mx-0">
                         {member.id === 'calvarado' ? (
-                          <img 
-                            src={celsoAlvaradoImage}
-                            alt="Dr. Celso Alvarado"
-                            className="w-32 h-32 object-cover rounded-lg shadow-lg"
-                          />
+                          <div className="w-32 h-32 bg-gradient-to-br from-qsi-navy to-qsi-orange rounded-lg flex items-center justify-center shadow-lg">
+                            <User className="h-16 w-16 text-white" />
+                          </div>
                         ) : member.id === 'vpoleto' ? (
-                          <img 
-                            src={veronicaPolettoImage}
-                            alt="Veronica Poletto"
-                            className="w-32 h-32 object-cover rounded-lg shadow-lg"
-                          />
+                          <div className="w-32 h-32 bg-gradient-to-br from-qsi-navy to-qsi-orange rounded-lg flex items-center justify-center shadow-lg">
+                            <User className="h-16 w-16 text-white" />
+                          </div>
                         ) : member.id === 'jwilkins' ? (
-                          <img 
-                            src={jenniferWilkinsImage}
-                            alt="Jennifer Wilkins"
-                            className="w-32 h-32 object-cover rounded-lg shadow-lg"
-                          />
+                          <div className="w-32 h-32 bg-gradient-to-br from-qsi-navy to-qsi-orange rounded-lg flex items-center justify-center shadow-lg">
+                            <User className="h-16 w-16 text-white" />
+                          </div>
                         ) : member.id === 'adallal' ? (
-                          <img 
-                            src={alondraDallalImage}
-                            alt="Alondra Dallal"
-                            className="w-32 h-32 object-cover rounded-lg shadow-lg"
-                          />
+                          <div className="w-32 h-32 bg-gradient-to-br from-qsi-navy to-qsi-orange rounded-lg flex items-center justify-center shadow-lg">
+                            <User className="h-16 w-16 text-white" />
+                          </div>
                         ) : member.id === 'arichter' ? (
-                          <img 
-                            src={athenaRichterImage}
-                            alt="Athena Ricter"
-                            className="w-32 h-32 object-cover rounded-lg shadow-lg"
-                          />
+                          <div className="w-32 h-32 bg-gradient-to-br from-qsi-navy to-qsi-orange rounded-lg flex items-center justify-center shadow-lg">
+                            <User className="h-16 w-16 text-white" />
+                          </div>
                         ) : member.id === 'dmaestre' ? (
-                          <img 
-                            src={danielaMaestreImage}
-                            alt="Daniela Maestre"
-                            className="w-32 h-32 object-cover rounded-lg shadow-lg"
-                          />
+                          <div className="w-32 h-32 bg-gradient-to-br from-qsi-navy to-qsi-orange rounded-lg flex items-center justify-center shadow-lg">
+                            <User className="h-16 w-16 text-white" />
+                          </div>
                         ) : member.id === 'ymontoya' ? (
-                          <img 
-                            src={yerardyMontoyaImage}
-                            alt="Yerardy Montoya"
-                            className="w-32 h-32 object-cover rounded-lg shadow-lg"
-                          />
+                          <div className="w-32 h-32 bg-gradient-to-br from-qsi-navy to-qsi-orange rounded-lg flex items-center justify-center shadow-lg">
+                            <User className="h-16 w-16 text-white" />
+                          </div>
                         ) : (
                           <div className="w-32 h-32 bg-gradient-to-br from-qsi-navy to-qsi-orange rounded-lg flex items-center justify-center shadow-lg">
                             <User className="h-16 w-16 text-white" />

@@ -4,7 +4,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { GraduationCap, BookOpen, CheckCircle, ArrowRight, Users, Award, Globe } from "lucide-react";
-import instructorImage from "@assets/image_1753834701664.png";
+// import instructorImage from "@assets/image_1753834701664.png";
 
 export default function JoinInstructors() {
   const { t } = useLanguage();
@@ -62,7 +62,7 @@ export default function JoinInstructors() {
             <div className="flex flex-col lg:flex-row items-center lg:items-end lg:justify-start gap-8 lg:gap-16">
               <div className="flex-shrink-0 order-2 lg:order-1">
                 <img 
-                  src={instructorImage}
+                  src="/assets/hero/coaching.png"
                   alt="Professional instructor"
                   className="w-64 h-56 lg:w-80 lg:h-72 object-cover rounded-lg shadow-lg mx-auto"
                 />

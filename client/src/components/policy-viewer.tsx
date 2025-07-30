@@ -6,7 +6,7 @@ import { Separator } from "@/components/ui/separator";
 import { policies, Policy } from "@/data/policies";
 import { ExternalLink } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
-import qsiLogo from "@assets/logo-certifications-small-3-1_1753797040426.png";
+// import qsiLogo from "@assets/logo-certifications-small-3-1_1753797040426.png";
 
 interface PolicyViewerProps {
   policyId: string;
@@ -52,7 +52,7 @@ export default function PolicyViewer({
               <div className="flex items-start gap-6 mb-6">
                 <div className="flex-shrink-0">
                   <img 
-                    src={qsiLogo} 
+                    src="/assets/qsi-logo.png" 
                     alt="QSI Certifications" 
                     className="h-16 w-auto object-contain bg-qsi-navy p-3 rounded"
                   />

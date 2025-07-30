@@ -4,7 +4,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { UserCheck, Shield, CheckCircle, ArrowRight, Globe, Award, Users } from "lucide-react";
-import auditorImage from "@assets/image_1753834782447.png";
+// import auditorImage from "@assets/image_1753834782447.png";
 
 export default function JoinAuditors() {
   const { t } = useLanguage();
@@ -62,7 +62,7 @@ export default function JoinAuditors() {
             <div className="flex flex-col lg:flex-row items-center lg:items-end lg:justify-start gap-8 lg:gap-16">
               <div className="flex-shrink-0 order-2 lg:order-1">
                 <img 
-                  src={auditorImage}
+                  src="/assets/hero/coaching.png"
                   alt="Professional auditor"
                   className="w-64 h-56 lg:w-80 lg:h-72 object-cover rounded-lg shadow-lg mx-auto"
                 />

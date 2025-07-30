@@ -1,7 +1,7 @@
 import { Linkedin, Twitter, Facebook } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Link } from "wouter";
-import qsiLogo from "@assets/logo-certifications-small-3-1_1753798084488.png";
+// import qsiLogo from "@assets/logo-certifications-small-3-1_1753798084488.png";
 
 
 const footerSections = [
@@ -36,7 +36,7 @@ export default function Footer() {
           <div className="col-span-1">
             <div className="flex items-center mb-4">
               <img 
-                src={qsiLogo} 
+                src="/assets/qsi-logo.png" 
                 alt="QSI Certifications" 
                 className="h-16 w-auto"
               />

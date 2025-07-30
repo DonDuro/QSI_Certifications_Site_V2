@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { QrCode, Search, CheckCircle, XCircle, AlertCircle } from "lucide-react";
 import { useState } from "react";
-import validationImage from "@assets/image_1753826103723.png";
+// import validationImage from "@assets/image_1753826103723.png";
 
 export default function CertificateValidation() {
   const { t } = useLanguage();
@@ -49,7 +49,7 @@ export default function CertificateValidation() {
               {/* Validation Image - Left Side on Desktop, Top on Mobile */}
               <div className="flex-shrink-0 order-2 lg:order-1">
                 <img 
-                  src={validationImage}
+                  src="/assets/hero/office-pic.jpg"
                   alt="Digital certificate validation"
                   className="w-64 h-40 lg:w-80 lg:h-52 object-cover rounded-lg shadow-lg mx-auto"
                 />

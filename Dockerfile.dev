@@ -1,0 +1,30 @@
+# Development Dockerfile for QSI Certifications
+FROM node:20-alpine
+
+# Set working directory
+WORKDIR /app
+
+# Install dependencies for native modules
+RUN apk add --no-cache python3 make g++
+
+# Update npm to latest version
+RUN npm install -g npm@latest
+
+# Copy package files
+COPY package*.json ./
+
+# Clear npm cache and install dependencies
+RUN npm cache clean --force
+RUN npm install --legacy-peer-deps
+
+# Copy source code
+COPY . .
+
+# Copy the deployment config
+RUN cp vite.config.deployment.ts vite.config.ts
+
+# Expose ports
+EXPOSE 3000 5000
+
+# Start development server
+CMD ["npm", "run", "dev"]

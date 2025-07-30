@@ -4,7 +4,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { HelpCircle, CheckCircle, Shield, Monitor, Users, FileCheck, Award, Globe } from "lucide-react";
-import faqImage from "@assets/image_1753824196829.png";
+// import faqImage from "@assets/image_1753824196829.png";
 
 export default function FAQ() {
   const { t } = useLanguage();
@@ -154,7 +154,7 @@ export default function FAQ() {
               {/* FAQ Image - Left Side on Desktop, Top on Mobile */}
               <div className="flex-shrink-0 order-2 lg:order-1">
                 <img 
-                  src={faqImage}
+                  src="/assets/hero/coaching.png"
                   alt="Frequently asked questions"
                   className="w-64 h-56 lg:w-80 lg:h-72 object-cover rounded-lg shadow-lg mx-auto"
                 />

@@ -6,8 +6,9 @@ import { Button } from "@/components/ui/button";
 import PolicyViewer from "@/components/policy-viewer";
 import { Link } from "wouter";
 import { FileText, Shield, Users, Scale, Heart, BookOpen } from "lucide-react";
-import governanceImage from "@assets/image_1753822247368.png";
-import policiesImage from "@assets/image_1753824024580.png";
+// Temporary: Images not available, using placeholder
+// import governanceImage from "@assets/image_1753822247368.png";
+// import policiesImage from "@assets/image_1753824024580.png";
 
 export default function CorporatePolicies() {
   const { t } = useLanguage();
@@ -69,7 +70,7 @@ export default function CorporatePolicies() {
               {/* Policies Image - Left Side on Desktop, Top on Mobile */}
               <div className="flex-shrink-0 order-2 lg:order-1">
                 <img 
-                  src={policiesImage}
+                  src="/assets/hero/executive-meeting.jpg"
                   alt="Digital policies and documentation"
                   className="w-64 h-40 lg:w-80 lg:h-52 object-cover rounded-lg shadow-lg mx-auto"
                 />

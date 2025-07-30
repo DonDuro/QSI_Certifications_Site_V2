@@ -3,8 +3,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Award, Leaf, Shield, Lock, Users, ArrowRight, UserCheck, Brain } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useLocation } from "wouter";
-import corporateOfficeImage from "@assets/image_1753822162465.png";
-import iso9001Image from "@assets/image_1753828047073.png";
+// import corporateOfficeImage from "@assets/image_1753822162465.png";
+// import iso9001Image from "@assets/image_1753828047073.png";
 
 
 
@@ -20,7 +20,7 @@ export default function ServicesSection() {
       description: t('qualityManagementDesc'),
       bgColor: "bg-qsi-orange",
       route: "/iso-9001",
-      thumbnail: iso9001Image
+      thumbnail: "/assets/hero/office-pic.jpg"
     },
     {
       icon: Leaf,
@@ -78,7 +78,7 @@ export default function ServicesSection() {
         <div className="relative mb-20 rounded-2xl overflow-hidden">
           <div className="absolute inset-0">
             <img 
-              src={corporateOfficeImage}
+              src="/assets/hero/executive-meeting.jpg"
               alt="Corporate office environment"
               className="w-full h-full object-cover"
             />

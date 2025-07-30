@@ -4,10 +4,10 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Award, Shield, CheckCircle } from "lucide-react";
-import abaLogo from "@assets/image_1753800921866.png";
-import emaLogo from "@assets/image_1753801189335.png";
-import businessMeetingImage from "@assets/image_1753822247368.png";
-import accreditationMeetingImage from "@assets/image_1753823833228.png";
+// import abaLogo from "@assets/image_1753800921866.png";
+// import emaLogo from "@assets/image_1753801189335.png";
+// import businessMeetingImage from "@assets/image_1753822247368.png";
+// import accreditationMeetingImage from "@assets/image_1753823833228.png";
 
 export default function Accreditations() {
   const { t } = useLanguage();
@@ -26,7 +26,7 @@ export default function Accreditations() {
               {/* Accreditation Meeting Image - Left Side on Desktop, Top on Mobile */}
               <div className="flex-shrink-0 order-2 lg:order-1">
                 <img 
-                  src={accreditationMeetingImage}
+                  src="/assets/hero/executive-meeting.jpg"
                   alt="Professional accreditation meeting"
                   className="w-64 h-56 lg:w-80 lg:h-72 object-cover rounded-lg shadow-lg mx-auto"
                 />
@@ -60,7 +60,7 @@ export default function Accreditations() {
                 <div className="text-left">
                   <div className="bg-gray-50 rounded-lg p-8 mb-6 flex justify-start">
                     <img 
-                      src={abaLogo} 
+                      src="/assets/clients/qsi-logos-collection.png" 
                       alt="Accreditation Board of America" 
                       className="h-24 w-auto"
                     />
@@ -84,7 +84,7 @@ export default function Accreditations() {
                 <div className="text-left">
                   <div className="bg-gray-50 rounded-lg p-8 mb-6 flex justify-start">
                     <img 
-                      src={emaLogo} 
+                      src="/assets/clients/qsi-logos-collection.png" 
                       alt="Entidad Mexicana de Acreditación" 
                       className="h-24 w-auto"
                     />

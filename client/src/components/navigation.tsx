@@ -3,7 +3,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronDown, ChevronRight } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
-import qsiLogo from "@assets/logo-certifications-small-3-1_1753797040426.png";
+// import qsiLogo from "@assets/logo-certifications-small-3-1_1753797040426.png";
 
 export default function Navigation() {
   const { language, setLanguage, t } = useLanguage();
@@ -76,7 +76,7 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <img 
-              src={qsiLogo} 
+              src="/assets/qsi-logo.png" 
               alt="QSI Certifications" 
               className="h-10 w-auto"
             />

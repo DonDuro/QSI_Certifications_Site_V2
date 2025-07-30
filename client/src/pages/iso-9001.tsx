@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Award, Calendar, Target, ExternalLink, GraduationCap, Monitor } from "lucide-react";
 import { useLocation } from "wouter";
-import heroImage from "@assets/image_1753828047073.png";
+// import heroImage from "@assets/image_1753828047073.png";
 
 export default function ISO9001() {
   const { t } = useLanguage();
@@ -64,7 +64,7 @@ export default function ISO9001() {
           <div 
             className="absolute inset-0 bg-cover bg-center opacity-40"
             style={{
-              backgroundImage: `url(${heroImage})`
+              backgroundImage: `url('/assets/hero/office-pic.jpg')`
             }}
           ></div>
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

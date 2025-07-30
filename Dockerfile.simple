@@ -1,0 +1,27 @@
+# Simple Dockerfile for development
+FROM node:20-bullseye
+
+WORKDIR /app
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y python3 make g++ git && rm -rf /var/lib/apt/lists/*
+
+# Copy package files first
+COPY package*.json ./
+
+# Install dependencies with specific npm version and rollup fix
+RUN npm install -g npm@10.8.2
+RUN npm install --force --no-optional
+RUN npm install @rollup/rollup-linux-x64-gnu --save-optional || true
+
+# Copy source code
+COPY . .
+
+# Copy deployment config
+RUN cp vite.config.deployment.ts vite.config.ts
+
+# Expose port
+EXPOSE 3000
+
+# Start command
+CMD ["npm", "run", "dev"]

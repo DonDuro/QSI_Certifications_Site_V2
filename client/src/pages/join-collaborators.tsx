@@ -4,7 +4,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Users, Briefcase, CheckCircle, ArrowRight, TrendingUp, Globe, Award, UserPlus, BarChart, Headphones, FileText, Monitor } from "lucide-react";
-import collaboratorImage from "@assets/image_1753834479959.png";
+// import collaboratorImage from "@assets/image_1753834479959.png";
 
 export default function JoinCollaborators() {
   const { t } = useLanguage();
@@ -82,7 +82,7 @@ export default function JoinCollaborators() {
             <div className="flex flex-col lg:flex-row items-center lg:items-end lg:justify-start gap-8 lg:gap-16">
               <div className="flex-shrink-0 order-2 lg:order-1">
                 <img 
-                  src={collaboratorImage}
+                  src="/assets/hero/office-pic.jpg"
                   alt="Professional collaborator"
                   className="w-64 h-56 lg:w-80 lg:h-72 object-cover rounded-lg shadow-lg mx-auto"
                 />
